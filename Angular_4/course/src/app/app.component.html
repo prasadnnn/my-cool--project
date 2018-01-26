@@ -1,0 +1,9 @@
+<h1>
+  {{title}}
+</h1>
+
+<cource></cource>
+<brands></brands>
+<favorite [is-favoriate]="post.isFavorite" (change)="favoriateChange($event)"></favorite>
+
+<star [isFavoriate]="post.isFavorite" (clicking)="starClicked($event)"></star>
